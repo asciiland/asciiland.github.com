@@ -1,0 +1,41 @@
+8
+
+dir
+537
+svn+ssh://parasew@rubyforge.org/var/svn/instiki/instiki/trunk/public/stylesheets
+svn+ssh://parasew@rubyforge.org/var/svn/instiki
+
+
+
+2007-04-08T20:12:23.150951Z
+518
+parasew
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6672c7b4-72ec-0310-ba2f-80f7574ec3f6
+
+instiki.css
+file
+
+
+
+
+2007-09-26T10:38:42.000000Z
+9d7093340e32fa3c6324e26d3567052d
+2007-04-08T20:12:23.150951Z
+518
+parasew
+has-props
+

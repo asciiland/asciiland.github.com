@@ -1,0 +1,51 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Asciitunes: Patches Max à tester</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+</head>
+<body>
+	
+	<h1><a href="HomePage.html"><img src="stylesheets/ascii_html01_small.png" width="194" height="131" alt="Ascii Html01 Small" /></a></h1>
+	
+	<h1>Patches Max à tester</h1>
+          <h2>maxmspconversion</h2>
+
+<p>exemple de client osc...</p>
+
+<blockquote>
+    <p>maxmspconversion taken from <a href="http://processinghacks.com/hacks:maxmspconversion">http://processinghacks.com/hacks:maxmspconversion</a><br />
+    @author Martin Wisniowski</p>
+</blockquote>
+
+<pre><code>max v2;
+#N vpatcher 319 131 783 497;
+#P window setfont "Sans Serif" 9.;
+#P newex 193 172 72 9109513 osc-route /trailx;
+#P newex 156 111 64 9109513 udp-read 3000;
+#P newex 156 142 84 9109513 OpenSoundControl;
+#P newex 193 198 26 9109513 print;
+#P connect 2 0 1 0;
+#P connect 1 1 3 0;
+#P connect 3 0 0 0;
+#P pop;
+</code></pre>
+
+<p>Remarque : remplacer l'objet udp-read par l'objet udpreceive (avec argument 3000, si port 3000).
+osc-route qui s'écrit OSC-route, est un objet qui doit être installé,
+il interprète les messages arrivant dans Open Sound Control, et dispatch / route / achemine leurs
+composantes individuellement.</p>
+
+<p><a class="existingWikiWord" href="files/OSC-route.zip">OSC-route.zip</a></p>
+          <div class="byline">
+            Revised on December 04, 2007 19:46:17
+            by
+            <span class="newWikiWord">Fab Rice</span>
+          </div>
+        </body>
+        </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Asciitunes: exemple moyenne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+</head>
+<body>
+	
+	<h1><a href="HomePage.html"><img src="stylesheets/ascii_html01_small.png" width="194" height="131" alt="Ascii Html01 Small" /></a></h1>
+	<h1>Exemple Moyenne</h1>
+          <h2>Objectifs</h2>
+
+<p>Calculer la moyenne des éléments d'une liste d'entiers.</p>
+
+<h2>Version 1</h2>
+
+<pre class="textmate-source monokai"><span class="source source_processing"><span class="support support_function support_function_processing">float</span> moyenne(<span class="support support_function support_function_processing">int</span>[] maListe)
+{
+   <span class="support support_function support_function_processing">int</span> i = <span class="constant constant_numeric constant_numeric_processing">0</span>;
+   <span class="support support_function support_function_processing">int</span> somme = <span class="constant constant_numeric constant_numeric_processing">0</span>;
+   <span class="keyword keyword_control keyword_control_processing">while</span>(i &lt; maListe.<span class="support support_function support_function_processing">length</span>){
+      somme += maListe[i];
+      i++;
+   }
+   <span class="keyword keyword_control keyword_control_processing">return</span> somme / maListe.<span class="support support_function support_function_processing">length</span>;
+}</span></pre>
+
+<h2>Version 2</h2>
+
+<p>On sépare le calcule de la somme des éléments et la moyenne. On obtient ainsi 2 méthodes utilisables individuellement.</p>
+
+<pre class="textmate-source monokai"><span class="source source_processing"><span class="support support_function support_function_processing">float</span> sum(<span class="support support_function support_function_processing">int</span>[] maListe)
+{
+   <span class="support support_function support_function_processing">int</span> i = <span class="constant constant_numeric constant_numeric_processing">0</span>;
+   <span class="support support_function support_function_processing">int</span> somme = <span class="constant constant_numeric constant_numeric_processing">0</span>;
+   <span class="keyword keyword_control keyword_control_processing">while</span>(i &lt; maListe.<span class="support support_function support_function_processing">length</span>){
+      somme += maListe[i];
+      i++;
+   }
+   <span class="keyword keyword_control keyword_control_processing">return</span> somme;
+}
+
+<span class="support support_function support_function_processing">float</span> moyenne(<span class="support support_function support_function_processing">int</span>[] maListe)
+{
+   <span class="keyword keyword_control keyword_control_processing">return</span> sum(maListe) / maListe.<span class="support support_function support_function_processing">length</span>;
+}</span></pre>
+          <div class="byline">
+            Created on December 04, 2007 10:55:42
+            by
+            <span class="newWikiWord">Fab Rice</span>
+          </div>
+        </body>
+        </html>

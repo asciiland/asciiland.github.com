@@ -1,0 +1,543 @@
+h1#pageName, .newWikiWord a, a.existingWikiWord, .newWikiWord a:hover { 
+  color: #FA6F00; 
+}
+.newWikiWord { background-color: white; font-style: italic; }
+body {
+background-color:#FFF;
+color:#333;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:90%;
+line-height:1.3em;
+}
+a img, a:hover img {
+	border:0;
+}
+#Container {
+float:none;
+margin:0 15%;
+text-align:center;
+}
+
+#Content {
+border-top:none;
+float:left;
+margin:0;
+padding:0.3em;
+text-align:left;
+width:100%;
+}
+
+a:visited {
+color:#666;
+}
+
+h1,h2,h3 {
+color:#333;
+font-family:georgia, verdana, sans-serif;
+}
+
+h1 {
+font-size:200%;
+}
+
+h2 {
+font-size:130%;
+}
+
+h3 {
+font-size:120%;
+}
+
+h1#pageName {
+line-height:1em;
+margin:0.2em 0 0;
+padding:0;
+}
+
+h1#pageName small {
+color:#444;
+font-size:35%;
+line-height:1em;
+padding:0;
+}
+
+a.nav,a.nav:link,a.nav:visited {
+background-color:#FFF;
+color:#000;
+}
+
+table {
+border:double #000;
+border-collapse:collapse;
+}
+
+td {
+border:thin solid #888;
+}
+
+li {
+margin-bottom:0.5em;
+}
+
+.newWikiWord {
+background-color:#DDD;
+}
+
+.newWikiWord a:hover {
+background-color:#FFF;
+}
+
+form#navigationSearchForm {
+display:inline;
+}
+
+form#navigationSearchForm input {
+font-size:80%;
+}
+
+.navigation {
+color:#999;
+font-size:90%;
+margin-top:0.3em;
+}
+
+.navigation a:hover {
+background-color:#000;
+color:#FFF;
+text-decoration:none;
+}
+
+.navigation a {
+color:#000;
+font-weight:bold;
+}
+
+.navigation small a {
+font-size:90%;
+font-weight:normal;
+}
+
+.navOn {
+color:#444;
+font-weight:bold;
+text-decoration:none;
+}
+
+div.help {
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:70%;
+}
+
+div.inputBox {
+background-color:#EEE;
+font-family:verdana, arial, helvetica, sans-serif;
+font-size:80%;
+margin-bottom:1.5em;
+padding:0.3em;
+}
+
+blockquote {
+display:block;
+font-size:90%;
+font-style:italic;
+line-height:1.5em;
+margin:0 0 1.5em;
+padding:0 2.5em;
+}
+
+
+/* Affects the display of "category: ..." */
+.property { 
+color: #999; 
+font-size: 80%; 
+}
+
+.hidden { 
+display: none;
+}
+
+pre {
+background-color:#DDD;
+font-size:90%;
+overflow:auto;
+padding:1em;
+}
+
+ol.setup {
+font-family:georgia, verdana, sans-serif;
+font-size:110%;
+margin-top:1em;
+padding-left:1.5em;
+}
+
+.byline {
+color:#999;
+font-size:65%;
+font-style:italic;
+margin-bottom:1em;
+padding-top:1px;
+}
+
+.diffdel,del.diffmod {
+background-color:#FAA;
+}
+
+.diffins,ins.diffmod {
+background-color:#AFA;
+}
+
+#footer {
+color:#999;
+font-size:60%;
+font-style:italic;
+line-height:1.2em;
+padding-top:2em;
+text-align:right;
+}
+
+#footer a:link,#footer a:visited {
+color:#888;
+font-style:italic;
+}
+
+div.web_normal {
+	padding:4px;
+}
+
+div.web_protected {
+	padding:4px;
+	background-color:#DDD;
+}
+
+div.inputFieldWithPrompt {
+margin:0.75em 0;
+}
+
+div.errorExplanation {
+background-color:#FFA;
+color:#900;
+font-style:italic;
+font-weight:bold;
+margin:1.5em 0;
+padding:1em;
+width:100%;
+}
+
+div.errorExplanation h2 {
+display:none;
+}
+
+div.errorExplanation ul {
+border:none;
+margin:0.5em 0 0 2em;
+padding:0;
+}
+
+div.fieldWithErrors input {
+border:1px solid #900;
+}
+
+div.info {
+background-color:#DDD;
+color:#060;
+font-weight:bold;
+margin-top:0.5em;
+padding:0.5em;
+width:100%;
+}
+
+div#editFormButtons {
+margin:0.5em 0 0;
+}
+
+div#editFormButtons span {
+white-space:nowrap;
+}
+
+div#editForm {
+float:left;
+width:65%;
+}
+
+div#editForm textarea#content {
+height:400px;
+width:97%;
+}
+
+div#MarkupHelp {
+float:right;
+width:34%;
+}
+
+div#MarkupHelp table {
+border:3px solid #BBB;
+border-left:3px solid #999;
+border-right:3px solid #BBB;
+border-top:3px solid #999;
+margin-bottom:0;
+}
+
+div#MarkupHelp td {
+border:1px solid #999;
+border-width:1px 0;
+font-size:80%;
+margin:0;
+padding:0.2em;
+vertical-align:top;
+white-space:nowrap;
+}
+
+div#MarkupHelp td.arrow {
+color:#999;
+padding:0 0.75em;
+}
+
+div#MarkupHelp h3 {
+font-size:100%;
+font-weight:bold;
+margin:0 0 5px;
+padding:5px 0 0;
+}
+
+div#MarkupHelp p {
+font-size:70%;
+}
+
+div.rightHandSide {
+border-left:1px dotted #ccc;
+float:right;
+font-size:80%;
+margin-left:0.7em;
+padding-left:1.5em;
+width:25%;
+}
+
+.newsList {
+margin-top:1.5em;
+}
+
+.newsList p {
+margin-bottom:2.5em;
+}
+
+.property {
+color:#999;
+font-size:80%;
+}
+
+a,li span {
+color:#000;
+}
+
+a:hover,a.nav:hover {
+background-color:#000;
+color:#FFF;
+}
+
+div.errorExplanation p,div.errorExplanation li {
+border:none;
+margin:0;
+padding:0;
+}
+
+/* .disableAutoComplete {
+display: none; 
+margin-top: 10px; 
+margin-bottom: 5px; 
+width: 99%; 
+height: 200px	
+} */
+
+pre, pre.textmate-source {
+	font-family: "DejaVu Sans Mono", monospace;
+	font-size: 12px;
+	line-height: 1.3em;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+pre, pre.textmate-source {
+	/*color: #F8F8F2;*/
+	color: #A6E22E;
+	background-color: #272822;
+}
+
+pre.textmate-source .linenum {
+	width: 75px;
+	padding: 0.1em 1em 0.2em 0;
+	color: #888;
+	background-color: #eee;
+}
+pre.textmate-source span {
+   padding-top: 0.2em;
+   padding-bottom: 0.1em;
+}
+pre.textmate-source ::selection {
+	background-color: #49483E;
+}
+/* Comment */
+pre.textmate-source .comment {
+	color: #75715E;
+}
+
+/* String */
+pre.textmate-source .string {
+	color: #E6DB74;
+}
+
+/* Number */
+pre.textmate-source .constant_numeric {
+	color: #AE81FF;
+}
+
+/* Built-in constant */
+pre.textmate-source .constant_language {
+	color: #AE81FF;
+}
+
+/* User-defined constant */
+pre.textmate-source .constant_character, pre.textmate-source .constant_other {
+	color: #AE81FF;
+}
+
+/* Variable */
+pre.textmate-source .variable {
+}
+
+/* Keyword */
+pre.textmate-source .keyword {
+	color: #F92672;
+}
+
+/* Storage */
+pre.textmate-source .storage {
+	color: #F92672;
+}
+
+/* Storage type */
+pre.textmate-source .storage_type {
+	color: #66D9EF;
+	font-style: italic;
+}
+
+/* Class name */
+pre.textmate-source .entity_name_class {
+	color: #A6E22E;
+	text-decoration: underline;
+}
+
+/* Inherited class */
+pre.textmate-source .entity_other_inherited-class {
+	color: #A6E22E;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/* Function name */
+pre.textmate-source .entity_name_function {
+	color: #A6E22E;
+}
+
+/* Function argument */
+pre.textmate-source .variable_parameter {
+	color: #FD971F;
+	font-style: italic;
+}
+
+/* Tag name */
+pre.textmate-source .entity_name_tag {
+	color: #F92672;
+}
+
+/* Tag attribute */
+pre.textmate-source .entity_other_attribute-name {
+	color: #A6E22E;
+}
+
+/* Library function */
+pre.textmate-source .support_function {
+	color: #66D9EF;
+}
+
+/* Library constant */
+pre.textmate-source .support_constant {
+	color: #66D9EF;
+}
+
+/* Library class/type */
+pre.textmate-source .support_type, pre.textmate-source .support_class {
+	color: #66D9EF;
+	font-style: italic;
+}
+
+/* Library variable */
+pre.textmate-source .support_other_variable {
+}
+
+/* Invalid */
+pre.textmate-source .invalid {
+	color: #F8F8F0;
+	background-color: #F92672;
+}
+
+/* Invalid deprecated */
+pre.textmate-source .invalid_deprecated {
+	color: #F8F8F0;
+	background-color: #AE81FF;
+}
+
+/* Markup Italic */
+pre.textmate-source .markup_italic {
+	color: #A6E22E;
+	font-style: italic;
+}
+
+/* Markup Bold */
+pre.textmate-source .markup_bold {
+	color: #A6E22E;
+	font-weight: bold;
+}
+
+/* Markup Underline */
+pre.textmate-source .markup_underline {
+	color: #A6E22E;
+	text-decoration: underline;
+}
+
+/* Markup Quote */
+pre.textmate-source .markup_quote {
+	color: #66D9EF;
+	font-style: italic;
+}
+
+/* Markup Heading */
+pre.textmate-source .markup_heading, pre.textmate-source .markup_heading .entity {
+	color: #F92672;
+	font-weight: bold;
+}
+
+/* Markup List */
+pre.textmate-source .markup_list {
+	color: #E6DC74;
+}
+
+/* Markup Raw */
+pre.textmate-source .markup_raw {
+	color: #AE81FE;
+}
+
+/* Markup Comment */
+pre.textmate-source .markup_comment {
+	color: #75715E;
+}
+
+/* Markup Separator */
+pre.textmate-source .meta_separator {
+	color: #272822;
+	background-color: #590E29;
+}
+
+

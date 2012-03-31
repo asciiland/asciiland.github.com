@@ -1,46 +1,74 @@
 ---
 layout: page
-title: Hello World!
+title:  ASCIILAND - Home
 tagline: Supporting tagline
 ---
-{% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<pre><code>
+     .M#:                                               x##=    
+      o#%             +                                =##*     
+      .M#%:           wx                   +:         ^#M=      
+       :M##w:  ~w.    ~#x                  @=    =  =$#w~       
+        .%###%~ w$:    ~#@                +#~   :@:w#M=         
+          +w###%=$#w=   ~#^               M@   =###M*           
+            :o$######$*. *#.             w#:~^@##%+             
+               ~=oxwM##Mo~@$:          :@##$#M%+                
+                  ^xo%w@##$##o      *%$##@wx*++o~               
+                  ^#o^oxow####$: .=@####%oo^^^^#:               
+                   x$*=**^M#####M####M#Mx^****w^                
+                    ^%xoo^w###Mw%w@@%%$M*^oxx^:                 
+                      ~::w%w##M%%%%$#@*%x^=:                    
+                          %w%########%%^                        
+                          **o###Mw##@^**                        
+                          ^**^wMo=wo=**^.                       
+                          *****w@w@w^**^:                       
+</code></pre>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+## Liens
 
-## Update Author Attributes
+* [Twitter](https://twitter.com/#!/deerweb)  
+* [Tumblr](http://pok.tumblr.com)  
+* [Github](https://github.com/sofadesign)
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+## Projets
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+### Limonade PHP
 
-    $ rm -rf _posts/core-samples
+[Limonade PHP](http://limonade-php.net/) est un micro-framwork pour le
+veloppemnt rapide d'applications web et de prototypes. Inspiré
+de [Camping](http://camping.rubyforge.org/), [Sinatra](http://www.sinatrarb.com/) et [Orbit](http://orbit.luaforge.net/). Il est simple, léger et flexible.
 
-Here's a sample "posts list".
+### Héliogravures
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+- [Héliogravures, fragments videos #0..#9](http://vimeo.com/album/131190): Un série de fragments vidéos créés au cours du projet performatif Héliogravures de Julien Jeanne au musée de la danse, à Rennes, Sept - Oct 2009.
+- [héliogravures, site
+  internet](http://julien-jeanne.org/heliogravures/): édition en ligne
+du projet.
 
-## To-Do
+### Asciitunes
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+![Logo Asciitunes](asciitunes/wiki-workshops/stylesheets/ascii_html01_small.png)
 
+Un projet que j'ai proposé avec Fanny Charrier dans le cadre du [GEPS](http://www.artplug.net/luclarmor/GEPS/GEPS.html).
+
+> **"Déposer une image: écouter du son"**  
+
+> Asciitunes est un protocole de production sonore, alimenté par un dépôt d'images sur Internet.
+
+> Le protocole Asciitunes permet de générer, de lire, et d'interpréter une partition, à partir d'une image.
+
+> Proposition renversant la "hiérarchie" usuelle du Web: l'image surtout; le son parfois.
+
+> Asciitunes se déclinera en 2 phases:
+
+> - un 1er protocole, initié sur Internet pour la collecte d'images, dédié à une production sonore in situ, durant un temps d'installation.
+> - un 2d protocole, dédié au Web, de la collecte à la production sonore.
+
+> — [Asciitunes: les grandes lignes](asciitunes/wiki-workshops/Asciitunes-+les+grandes+lignes.html)
+
+Liens:
+
+- [Wiki mis en place durant les workshops de novembre 2007 et mars 2008 (archive)](asciitunes/wiki-workshops/HomePage.html)
+- [Générateur de partitions en ligne](http://beta.asciitunes.com/)
 

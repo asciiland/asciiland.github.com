@@ -1,0 +1,146 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Asciitunes: workshop du 10 au 14 mars 2008</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+</head>
+<body>
+	
+	<h1><a href="HomePage.html"><img src="stylesheets/ascii_html01_small.png" width="194" height="131" alt="Ascii Html01 Small" /></a></h1>
+	
+	<h1>Workshop du 10 au 14 mars 2008</h1>
+          <h2>Retour sur le workshop de novembre 2007</h2>
+
+<p>Ce 1er workshop avait permis de cerner le cadre et les intentions spécifiques au projet, de s'initier aux fonctionnements des outils nécessaires à la mise en place d'Asciitunes, et de questionner l'articulation entre ces deux composantes.</p>
+
+<p>Il en est sorti:</p>
+
+<ul>
+<li>la production des échantillons sonores (matière première)</li>
+<li>des hypothèses d'écritures sonores (rapport sons/niveaux de gris de la partition)</li>
+<li>des solutions de communication entre Max MSP et Processing</li>
+<li>des méthodes d'analyse des données récupérées dans Max MSP</li>
+</ul>
+
+<p>Sur la base des conclusions et hypothèses de cette 1ère session, le 2d workshop vise à concrétiser le protocole Asciitunes:</p>
+
+<ul>
+<li>affiner les méthodes d'analyses des données</li>
+<li>préciser et arrêter les choix d'écritures sonores</li>
+<li>assurer une production sonore fluide à partir des partitions générées.</li>
+</ul>
+
+<h3>Points abordés durant le workshop de mars 2008</h3>
+
+<ul>
+<li>choix de matériaux dans la banque de sons </li>
+<li>définition de règles d'écriture à partir de l'alphabet Ascii</li>
+<li>manipulation et choix de patches Max spécifiques</li>
+<li>synchronisation de l'ensemble des paramètres choisis et production sonore</li>
+</ul>
+
+<h2>Concrètement…</h2>
+
+<h3>Principes généraux</h3>
+
+<h4>Rapport partition / échantillons sonores</h4>
+
+<p>Nous avons fixé le principe d'interaction reliant la partition générée d'une part, et la collection d'échantillons sonores d'autres part.</p>
+
+<p><a href="http://picasaweb.google.fr/fabrice.luraine/GEPSAsciiTunesWorkshop2Mars2008/photo#5194579058739014546"><img src="http://lh6.ggpht.com/fabrice.luraine/SBbaIcHSa5I/AAAAAAAAAQI/G5B82-HaHEI/s400/asciit_principe.png" /></a></p>
+
+<p>Ce principe est posé pour assurer une comparaison audible entre les morceaux, à partir d'un matériau commun à l'ensemble des partitions générées:</p>
+
+<ul>
+<li>un univers sonore prédéfini, identifiable selon la collection d'échantillons initiée.</li>
+<li>des événements prédéterminés dans le scénario (choix des sons dans la collection, hauteur des sons, déclenchements, longueur de boucles,…), modulés par les valeurs de la partitions.</li>
+</ul>
+
+<h4>Le scénario principal</h4>
+
+<p>Une partition déclenche la production d'une composition sonore.</p>
+
+<p>Chaque composition est produite à partir de 2 échantillons sonores sélectionnés:
+ces 2 échantillons sont issus de 2 sets d'échantillons (de même constitution), séléctionnés selon les informations de la partition.</p>
+
+<p>Chaque échantillon va être démultiplié en 16 exemplaires; eux-mêmes regroupés par 4.</p>
+
+<p>Des événements et transformations vont s'impacter sur les groupes et les exemplaires en fonction des valeurs issues de la partition.</p>
+
+<p>Chaque composition dure 2 minutes (avec un fade de 1000ms au début, et de 5000ms à la fin).</p>
+
+<h3>Les informations apportées par la partition</h3>
+
+<h4>Informations brutes de densité par caractères</h4>
+
+<p>On a identifié 3 groupes signifiants de caractères (G1, G2, G3) en fonction de leur densité.</p>
+
+<p><a href="http://picasaweb.google.fr/fabrice.luraine/GEPSAsciiTunesWorkshop2Mars2008/photo#5194579058739014530"><img src="http://lh6.ggpht.com/fabrice.luraine/SBbaIcHSa4I/AAAAAAAAAQA/qdENLKs2ZXk/s400/asciit_alphabet.png" /></a></p>
+
+<p>G1 et G3 représentent les  groupes de densités extrêmes (les sombres et les clairs).
+Les valeurs associées aux caractères de ces 2 groupes s'impacteront sur des événements globaux de la composition: sélection des échantillons, rythme d'événements,…</p>
+
+<p>G2 rassemble les caractères des gris intermédiaires; ces gris fournissent une information de détails et de variations entre les différentes densités. 
+Ces valeurs seront utilisées en tant que paramètres variables sur les exemplaires démultipliés des échantillons sélectionnés par la partition.</p>
+
+<h3>Les événements du player</h3>
+
+<p>Au chargement d'une partition, l'ensemble des valeurs est injecté dans le player et s'impacte en simultané sur les différents événements prédéfinis dans le player.</p>
+
+<p>On distinguera des événements d'analyse (des valeurs brutes de la partition) et des événements "autres" sur les échantillons.</p>
+
+<h4>Événements d'analyse</h4>
+
+<p><strong>Info Sound Select</strong> [objet sndsel]<br />
+analyse la valeur du caractère le +sombre (#) (> sélection d'un 1er échantillon); analyse la valeur du caractère le +clair ([esp]) (> sélection d'un 2d échantillon)<br />
+    [=> snd1 et snd2]</p>
+
+<p><strong>Info Window</strong><br />
+analyse l'écart de valeurs entre le caractère le +sombre (#) et le caractère le +clair ([esp]); amplitude<br />
+    [=> win]</p>
+
+<p><strong>Info Palier</strong> [objet defPalier]<br />
+analyse les densités des gris intermédiaires de la partition selon 4 paliers de variation; permet de définir le degré de variation de densités (faible, moyen, fort, fort+); agit sur le sens de lecture des échantillons (tous à l'endroit/ tous à l'envers/ 2 à l'endroit + 2 à l'envers/ 2 à l'envers + 2 à l'endroit)<br />
+    [=> pal]</p>
+
+<p><em>Détails à venir</em>  </p>
+
+<p><strong>Info Speed</strong> [objet scaler]<br />
+paramètres agissant sur la fréquence de déclenchement d'événements, issus d'une mise à l'échelle des valeurs de G1 (action sur échantillon et multiples associés) d'une part, et des valeurs de G2 d'autre part (action sur échantillon et multiples associés)<br />
+    [=> speed1 et speed2]</p>
+
+<p><strong>Info Pitch</strong> [objet scaler]<br />
+paramètres agissant sur la vitesse de lecture des exemplaires multiples de chaque échantillon, issus d'une mise à l'échelle des valeurs de G1 (action sur échantillon et multiples associés) d'une part, et des valeurs de G2 d'autre part (action sur échantillon et multiples associés)<br />
+    [=> pitch1 et pitch2]</p>
+
+<h4>Événements autres</h4>
+
+<p><strong>Randform</strong> [objet randform]: agit comme un séquenceur 
+à partir des valeurs Window et Speed, définit des déclenchements et des plages de lecture des échantillons; ces plages sont modulées par des paramètres aléatoires bornés par les valeurs Window et Speed.</p>
+
+<p><strong>Acid Bass</strong>: nappe permanente produite par un ensemble de 18 modules élémentaires de synthèse sonore (forme d'onde sinusoïdale + enveloppe d'amplitude). cette nappe est modulée par la valeur associée au caractère le +clair ([esp]).</p>
+
+<p><em>Dans le détail…</em><br />
+18 modules élémentaires de synthèse sonore (forme d'onde sinusoïdale + enveloppe d'amplitude)<br />
+oscillants autour de fréquences proches (condensations et battements) avec un procédé de légère fluctuation sur la fréquence de référence (objet drunk).<br />
+regroupés en 2x 9 modules (9 à gauche et 9 à droite = stéréo), chacun des 2 groupes subit une dégradation paramétrée (variation de la fréquence d'échantillonnage et de la résolution en bits), et enfin subit un filtre passe-bande variable en fréquences (se déplace linéairement du grave à l'aigu et inversement).</p>
+
+<h2>Prochain objectif…</h2>
+
+<ul>
+<li>affiner les réglages du player</li>
+<li>aborder la spatialisation</li>
+<li>fixer les choix d'échantillons constituant la collection</li>
+</ul>
+          <div class="byline">
+            Revised on April 29, 2008 10:45:56
+            by
+            <span class="newWikiWord">Fanny</span>
+          </div>
+        </body>
+        </html>

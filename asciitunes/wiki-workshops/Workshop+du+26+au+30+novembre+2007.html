@@ -1,0 +1,99 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Asciitunes: Workshop du 26 au 30 novembre 2007</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+</head>
+<body>
+	
+	<h1><a href="HomePage.html"><img src="stylesheets/ascii_html01_small.png" width="194" height="131" alt="Ascii Html01 Small" /></a></h1>
+	<h1>Workshop du 26 au 30 novembre 2007</h1>
+          <h2>Points abordés</h2>
+
+<ul>
+<li>présentation et manipulation Max MSP</li>
+<li>présentation et initiation Processing</li>
+<li>préparation de la banque de sons</li>
+<li>tests sonores avec Max MSP</li>
+<li>tests de communication partition/analyse/récupération des données</li>
+</ul>
+
+<p><em>Session orientée installation: production sonore in situ</em></p>
+
+<h2>Conclusions &amp; Hypothèses</h2>
+
+<h3>Partition et données exploitables</h3>
+
+<h4>Extraits d'alphabet Ascii</h4>
+
+<p>La partition Ascii est générée par un algorithme, à partir d'un alphabet de 16 caractères choisis du plus dense (#), au plus clair (espace): traduction du visuel initial traité sur 16 niveaux de gris.  </p>
+
+<pre><code> {'#', 'M', '$', '@', 'w', '%', 'x', 'o', '^', '*', '=', '+',':', '~', '.', ' '}
+</code></pre>
+
+<h4>Surface</h4>
+
+<p>La surface maximale de la partition est fixée à <strong>L = 512 px par H = 384 px</strong></p>
+
+<p>soit un total de <strong>6144</strong> caractères maximum; 
+sachant que chaque caractère est contenu dans une surface L=4px par H=8px.</p>
+
+<h4>Analyse des données</h4>
+
+<p>Une fois la partition Ascii générée, un script Processing analyse l'ensemble des caractères de la partition.</p>
+
+<p>On ressort ainsi pour chaque partition, certaines données chiffrées:  </p>
+
+<ul>
+<li>la quantité de symboles présents sur la partition pour chaque caractère</li>
+<li>la quantité totale de symboles (tous caractères confondus)</li>
+<li>la hauteur de la partition (en nb de caractères)</li>
+<li>la largeur de la partition (en nb de caractères)</li>
+</ul>
+
+<h4>Exploitation des données</h4>
+
+<p>Les données chiffrées, propres à chaque partition, communiquées à Max, vont
+s'impacter sur les patches créés, donnant à chaque composition un caractère spécifique à chaque partition.</p>
+
+<h3>Premières pistes d'interprétation</h3>
+
+<h4>Famille de caractères/familles de sons</h4>
+
+<ul>
+<li><p>Isoler 4 familles de caractères, en fonction de l'échelle de densité:<br />
+Très dense; Dense; Clair; Très clair</p></li>
+<li><p>Associer à ces 4 familles, des sources de sons en fonction de l'intensité sonore:</p></li>
+<li><p>1ère proposition</p>
+
+<ul>
+<li>famille "Très dense" > grincements  </li>
+<li>famille "Dense"      > percussions  </li>
+<li>famille "Clair"      > frottements  </li>
+<li>famille "Très clair"    > cliquetis</li>
+</ul></li>
+</ul>
+
+<h4>Composition sonore border-line</h4>
+
+<p>Dans l'optique d'une réflexion "border-line", perceptible/imperceptible, les traitements appliqués via Max tenteront d'initier certains rendus; comme, par exemple:</p>
+
+<ul>
+<li>une instabilité de certains sons (apparition/disparition) qui contrastera avec 
+d'autres sons plus constants.</li>
+<li>des jeux de contrastes variés, mais relativement "subtiles"; ie perceptibles mais juste ce qu'il faut; pas trop évidents non plus…</li>
+<li>un travail sur l'idée de bruissement en réponse au "murmure optique" de la partition Ascii</li>
+<li>liste non exhaustive…!!!</li>
+</ul>
+          <div class="byline">
+            Created on December 04, 2007 19:17:42
+            by
+            <span class="newWikiWord">Fanny</span>
+          </div>
+        </body>
+        </html>

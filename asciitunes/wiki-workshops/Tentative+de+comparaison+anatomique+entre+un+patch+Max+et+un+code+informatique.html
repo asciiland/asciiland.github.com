@@ -1,0 +1,68 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Asciitunes: tentative de comparaison anatomique entre un patch Max et un code informatique</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+</head>
+<body>
+	
+	<h1><a href="HomePage.html"><img src="stylesheets/ascii_html01_small.png" width="194" height="131" alt="Ascii Html01 Small" /></a></h1>
+<h1>Tentative de comparaison anatomique entre un patch Max et un code informatique</h1>
+          <p>Les différents croisements durant les workshops entre la pratique de Max et de Processing ont permis notamment de révéler plus en détail leur différences, leurs usages de prédilections, leur complémentarité. </p>
+
+<p>N'ayant aucune pratique de Max, j'ai essayé de l'envisager avec une logique de développeur.</p>
+
+<p>Cette comparaison est un essai de première synthèse qui permettra peut-être à chacun d'envisager la pratique de l'environnement qu'il ne connaît pas ou peu, du point de vue de celui qui lui est familier.</p>
+
+<p>Pour le code informatique, j'ai choisi le langage <a href="http://fr.wikipedia.org/wiki/C%2B%2B">C++</a> pour sa simplicité syntaxique et une structure au plus proche du patch.
+Cette comparaison peut tout aussi bien être faite avec du <a href="http://fr.wikipedia.org/wiki/Java_%28langage%29">Java</a> (<a href="http://processing.org/">Processing</a>); dans ce cas, on se passera de l'argument part défaut (pas possible en Java).</p>
+
+<p><a href="http://picasaweb.google.com/fabrice.luraine/GEPSAsciiTunesWorkshop2Mars2008/photo#5198001068873316690"><img src="http://lh5.ggpht.com/fabrice.luraine/SCMCbpRLeVI/AAAAAAAAAQ4/TY25JqeFeoA/s800/Anatomie%20patch%20Max.png" /></a></p>
+
+<p><a href="http://picasaweb.google.com/fabrice.luraine/GEPSAsciiTunesWorkshop2Mars2008/photo#5198001068873316674"><img src="http://lh5.ggpht.com/fabrice.luraine/SCMCbpRLeUI/AAAAAAAAAQw/bfGVUQaStnI/s800/Anatomie%20cpp.png" /></a></p>
+
+<p>En <a href="http://fr.wikipedia.org/wiki/Java_%28langage%29">Java</a>:</p>
+
+<pre class="textmate-source"><span class="source source_java"><span class="comment comment_block comment_block_documentation comment_block_documentation_javadoc"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_begin punctuation_definition_comment_begin_javadoc">/**</span>
+ <span class="meta meta_documentation meta_documentation_comment meta_documentation_comment_javadoc">*  <span class="text text_html">Définition d'une fonction en java
+</span></span> <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_javadoc">*/</span></span>
+<span class="meta meta_definition meta_definition_method meta_definition_method_java"><span class="storage storage_type storage_type_java">int</span> <span class="entity entity_name entity_name_function entity_name_function_java">ma_fonction</span><span class="meta meta_definition meta_definition_param-list meta_definition_param-list_java">(<span class="storage storage_type storage_type_java">int</span> val</span>)</span>{
+   <span class="comment comment_line comment_line_double-slash comment_line_double-slash_java"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_java">//</span> le code executé par ma fonction
+</span>   <span class="comment comment_line comment_line_double-slash comment_line_double-slash_java"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_java">//</span> ...
+</span>   <span class="comment comment_line comment_line_double-slash comment_line_double-slash_java"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_java">//</span> monResultat = ...
+</span>   <span class="comment comment_line comment_line_double-slash comment_line_double-slash_java"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_java">//</span>
+</span>  <span class="keyword keyword_control keyword_control_java">return</span> monResultat;
+}
+
+<span class="comment comment_line comment_line_double-slash comment_line_double-slash_java"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_java">//</span> Appel de cette fontion
+</span>ma_fonction(<span class="constant constant_numeric constant_numeric_java">20</span>); <span class="comment comment_line comment_line_double-slash comment_line_double-slash_java"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_java">//</span> retourne le résultat</span></span></pre>
+
+<p>En <a href="http://fr.wikipedia.org/wiki/Ruby">Ruby</a>:</p>
+
+<pre class="textmate-source"><span class="source source_ruby source_ruby_rails"><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span>
+</span><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> Définition d'une fonction en Ruby
+</span><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span>
+</span><span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">ma_fonction</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">(</span><span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">val<span class="keyword keyword_operator keyword_operator_assignment keyword_operator_assignment_ruby">=</span><span class="constant constant_numeric constant_numeric_ruby">100</span></span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">)</span></span>
+<span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> le code executé par ma fonction
+</span><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> ...
+</span><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> monResultat = ...
+</span><span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  <span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span>
+</span>  monResultat
+<span class="keyword keyword_control keyword_control_ruby">end</span>
+
+<span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> Appel de cette fontion
+</span>ma_fonction <span class="constant constant_numeric constant_numeric_ruby">20</span> <span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">#</span> retourne le résultat</span></span></pre>
+
+<p>--Fabrice </p>
+          <div class="byline">
+            Revised on June 11, 2008 15:34:23
+            by
+            <span class="newWikiWord">Fabrice</span>
+          </div>
+        </body>
+        </html>

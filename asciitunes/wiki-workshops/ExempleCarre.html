@@ -1,0 +1,64 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Asciitunes: Exemple Carré</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+</head>
+<body>
+	
+	<h1><a href="HomePage.html"><img src="stylesheets/ascii_html01_small.png" width="194" height="131" alt="Ascii Html01 Small" /></a></h1>
+	<h1>Exemple carré</h1>
+          <h2>Objectif</h2>
+
+<p>Créer un carré d'étoiles de 5 caractères de côté dans la console processing</p>
+
+<h2>Version simple</h2>
+
+<pre class="textmate-source minimal_theme"><span class="source source_processing"><span class="storage storage_type storage_type_processing">void</span> <span class="support support_function support_function_processing">setup</span>()
+{
+ <span class="support support_function support_function_processing">int</span> i= <span class="constant constant_numeric constant_numeric_processing">0</span>;
+ <span class="keyword keyword_control keyword_control_processing">while</span> (i&lt;<span class="constant constant_numeric constant_numeric_processing">5</span>)
+ {
+  <span class="support support_function support_function_processing">println</span>(<span class="string string_quoted string_quoted_double string_quoted_double_processing"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_processing">"</span>*****<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_processing">"</span></span>);
+  i++;
+ }
+}
+</span></pre>
+
+<h2>Version améliorée</h2>
+
+<pre class="textmate-source minimal_theme"><span class="source source_processing"><span class="storage storage_type storage_type_processing">void</span> <span class="support support_function support_function_processing">setup</span>()
+{
+ <span class="support support_function support_function_processing">int</span> i= <span class="constant constant_numeric constant_numeric_processing">0</span>;
+ <span class="support support_function support_function_processing">int</span> cote = <span class="constant constant_numeric constant_numeric_processing">5</span>;
+ <span class="keyword keyword_control keyword_control_processing">while</span> (i&lt;cote)
+ {
+  uneLigne(<span class="string string_quoted string_quoted_double string_quoted_double_processing"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_processing">"</span>#<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_processing">"</span></span>, cote);
+  i++;
+ }
+}
+
+<span class="storage storage_type storage_type_processing">void</span> uneLigne(<span class="storage storage_type storage_type_processing">String</span> signe, <span class="support support_function support_function_processing">int</span> longueur)
+{
+
+  <span class="storage storage_type storage_type_processing">String</span> ligne = <span class="string string_quoted string_quoted_double string_quoted_double_processing"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_begin punctuation_definition_string_begin_processing">"</span><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_end punctuation_definition_string_end_processing">"</span></span>;
+  <span class="support support_function support_function_processing">int</span> i = <span class="constant constant_numeric constant_numeric_processing">0</span>;
+  <span class="keyword keyword_control keyword_control_processing">while</span>(i&lt;longueur){
+   ligne += signe; <span class="comment comment_line comment_line_double-slash comment_line_double-slash_processing"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_processing">//</span>ligne = ligne + signe
+</span>   i++;
+  }
+  <span class="support support_function support_function_processing">println</span>(ligne);
+}
+</span></pre>
+          <div class="byline">
+            Revised on December 04, 2007 10:26:59
+            by
+            <span class="newWikiWord">Fab Rice</span>
+          </div>
+        </body>
+        </html>
