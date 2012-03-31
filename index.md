@@ -35,13 +35,13 @@ tagline: Supporting tagline
 
 ### Limonade PHP
 
-[Limonade PHP](http://limonade-php.net/) est un micro-framwork pour le
-veloppemnt rapide d'applications web et de prototypes. Inspiré
+[Limonade PHP](http://limonade-php.net/) est un micro-framework pour le
+Développemnt rapide d'applications web et de prototypes. Inspiré
 de [Camping](http://camping.rubyforge.org/), [Sinatra](http://www.sinatrarb.com/) et [Orbit](http://orbit.luaforge.net/). Il est simple, léger et flexible.
 
 ### Héliogravures
 
-- [Héliogravures, fragments videos #0..#9](http://vimeo.com/album/131190): Un série de fragments vidéos créés au cours du projet performatif Héliogravures de Julien Jeanne au musée de la danse, à Rennes, Sept - Oct 2009.
+- [Héliogravures, fragments videos #0..#9](http://vimeo.com/album/131190): Un série de fragments vidéos créés au cours du projet performatif Héliogravures de [Julien Jeanne](http://www.julienjeanne.blogspot.fr/) au musée de la danse, à Rennes, Sept - Oct 2009.
 - [héliogravures, site
   internet](http://julien-jeanne.org/heliogravures/): édition en ligne
 du projet.
