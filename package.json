@@ -42,5 +42,4 @@
     "compile:css": "mkdir -p assets && postcss src/*.css --base src --dir assets",
     "serve": "browser-sync start --server --files 'assets/*.css'"
   }
-
 }
