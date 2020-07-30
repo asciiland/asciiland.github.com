@@ -201,11 +201,19 @@ figure {
 }
 
 
-.c-content img {
+.c-content figure img {
   width: calc(100% - 8ch - 2px);
   padding: 4ch;
   margin: 1.4em 0;
   border: 1px solid white;
+}
+
+.c-content .thumbs img {
+  padding: 1ch;
+  margin:0;
+  width: calc(50% - 3ch);
+  min-width: 270px;
+  text-align: center;
 }
 
 .chars-box {
