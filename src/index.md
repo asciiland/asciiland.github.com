@@ -10,7 +10,7 @@ raw designer, creative coder and ASCII lover.
 
 1. Accueil
 2. Projets
-   1. Vous ne pouvez rien contre nous, nous vous empêchons de vieillir
+   1. Vous ne pouvez rien faire contre nous, nous vous empêchons de vieillir
    2. Éditions du commun
    3. Parade
    4. Héliogravures
@@ -23,7 +23,7 @@ raw designer, creative coder and ASCII lover.
 
 
 
-## 2.1 Vous ne pouvez rien contre nous, nous vous empêchons de vieillir
+## 2.1 Vous ne pouvez rien faire contre nous, nous vous empêchons de vieillir
 
 Date: _Juin 2020_
 
@@ -41,6 +41,8 @@ Livre, broché, xxx pages, Éditions du commun
 Maquette de Lucie Quézin
 
 [Commander](lien vers page edc)
+
+License…
 
 
 
