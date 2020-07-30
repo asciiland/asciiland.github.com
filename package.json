@@ -1,0 +1,46 @@
+{
+  "name": "asciiland",
+  "version": "1.0.0",
+  "description": "Asciiland website and portfolio",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asciiland/asciiland.github.com.git"
+  },
+  "author": "Fabrice Luraine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asciiland/asciiland.github.com/issues"
+  },
+  "homepage": "https://github.com/asciiland/asciiland.github.com#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "better-npm-run": "^0.1.1",
+    "browser-sync": "^2.26.10",
+    "chokidar-cli": "^2.1.0",
+    "cssnano": "^4.1.10",
+    "normalize.css": "^8.0.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-modules": "^3.2.0",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "scripts": {
+    "compile": "bnr compile",
+    "compile:css": "bnr compile:css",
+    "watch": "bnr watch",
+    "watch:css": "bnr watch:css",
+    "serve": "bnr serve"
+  },
+  "betterScripts": {
+    "watch": "npm run compile && npm run serve & npm run watch:css",
+    "watch:css": "chokidar \"src/*.css\" -c \"npm run compile:css\"",
+    "compile": "npm run compile:css & wait",
+    "compile:css": "mkdir -p assets && postcss src/*.css --base src --dir assets",
+    "serve": "browser-sync start --server --files 'assets/*.css'"
+  }
+
+}
