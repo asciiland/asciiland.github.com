@@ -7,7 +7,8 @@
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+  src: 
+       local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
        url('./fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('./fonts/source-sans-pro-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -123,7 +124,8 @@
 }
 
 .font-mono {
-  font-family: 'Source Code Pro',
+  font-family: 
+               'Source Code Pro',
                Consolas, "Andale Mono WT", "Andale Mono", 
                "Lucida Console", "Lucida Sans Typewriter", 
                "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
@@ -222,13 +224,13 @@ figure {
 .chars-box {
   line-height: 1;
   display: inline-block;
-  width: 4.5ch;
-  letter-spacing: 0.5ch;
+  /* width: 4.5ch; */
+  width: calc(3ch + 1ch + 1.25ch);
+  letter-spacing: 0.50ch;
   overflow-wrap: break-word;
   text-transform: lowercase;
-  /* text-transform: uppercase; */
   padding: 0.75ch;
-  padding-right: 1ch;
+  /* padding-right: 1ch; */
   padding-left: 1.25ch;
   padding-bottom: 1.25ch;
   border: 2px solid transparent;
