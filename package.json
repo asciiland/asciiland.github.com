@@ -40,6 +40,6 @@
     "watch:css": "chokidar \"src/*.css\" -c \"npm run compile:css\"",
     "compile": "npm run compile:css & wait",
     "compile:css": "mkdir -p assets && postcss src/*.css --base src --dir assets",
-    "serve": "browser-sync start --server --files 'assets/*.css'"
+    "serve": "browser-sync start --server --https --files 'assets/*.css'"
   }
 }
