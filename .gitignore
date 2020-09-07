@@ -1,6 +1,6 @@
 src/untracked/*
 
-node_modules/
+node_modules
 
 Thumbs.db
 .DS_Store
