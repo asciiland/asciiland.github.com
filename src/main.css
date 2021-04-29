@@ -181,6 +181,13 @@ h2::before, .h2::before {
   /* content: '— '; */
 }
 
+.p {
+  text-transform: none;
+  border-left: 0;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 ul {
   list-style: none;
   padding-left: 4ch;
@@ -199,7 +206,13 @@ figure {
   font-size: 0.8em;
 }
 .text-is-centered {
-  text-align:center;
+  text-align: center;
+}
+.text-is-right {
+  text-align: right;
+}
+.margin-bottom-xl {
+  margin-bottom: calc(7em * 1.4);
 }
 .l-content {
   max-width: 72ch;
