@@ -149,15 +149,15 @@ body {
 }
 
 @media screen and (min-width: 40em) {
-  .asciiland {
-    position: fixed;
-    top: 2ch;
-    left: 2ch;
-    right: 2ch;
-    bottom: 2ch;
-    overflow-y: auto;
-    padding: 1ch;
-  }
+  /* .asciiland {        */
+  /*   position: fixed;  */
+  /*   top: 2ch;         */
+  /*   left: 2ch;        */
+  /*   right: 2ch;       */
+  /*   bottom: 2ch;      */
+  /*   overflow-y: auto; */
+  /*   padding: 1ch;     */
+  /* }                   */
 }
 
 a {
@@ -166,6 +166,25 @@ a {
 a:hover, a:focus {
   text-decoration: none;
 }
+
+pre {
+  @extend .font-mono;
+}
+
+hr {
+  color: white;
+  border: 0;
+  border-bottom: 1px dashed white;
+}
+
+.text-wrap {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 1em;
