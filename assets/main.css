@@ -491,7 +491,8 @@ body {
 }
 
 .asciiland {
-  background-color: #d64444;
+  /* background-color: #d64444; */
+  background-color: #2a1734;
   padding: 1ch;
 }
 
@@ -535,9 +536,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 h2, .h2 {
   text-transform: uppercase;
-  border-left: 2px solid white;
-  padding-left: 1ch;
-  margin-left: -2px;
+  /* border-left: 2px solid white; */
+  /* padding-left: 1ch;            */
+  /* margin-left: -2px;            */
 }
 
 h2::before, .h2::before {
