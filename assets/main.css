@@ -485,14 +485,15 @@ template {
 body {
   font-size: 16px;
   line-height: 1.4;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
+  background-color: black;
   color: white;
   margin: 0;
 }
 
 .asciiland {
   /* background-color: #d64444; */
-  background-color: #2a1734;
+  /* background-color: #2a1734; */
   padding: 1ch;
 }
 
